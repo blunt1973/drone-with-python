@@ -12,6 +12,7 @@ pipeline:
       - mkdir -p coverage
       - nosetests -v tests/
   deploy:
-    script:
+    image: bash
+    commands:
       - echo "Start deploy..."
     manual: true
